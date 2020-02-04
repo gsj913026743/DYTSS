@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:binding="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.nhsoft.dormitory.viewModel.DormitoryViewModel"/>
+        <variable
+            name="viewModel"
+            type="DormitoryViewModel" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.DormitoryActivity"
+        android:background="@color/color_091D54">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginLeft="55px"
+                android:layout_marginTop="27px"
+                android:src="@drawable/time">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="21px"
+                android:textStyle="bold"
+                android:layout_marginTop="27px"
+                android:layout_marginLeft="91px">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="21px"
+                android:textStyle="bold"
+                android:layout_marginTop="13px"
+                android:layout_marginLeft="91px"
+                android:layout_below="@id/tv_date">
+
+            </TextView>
+            <RelativeLayout
+                android:layout_width="338px"
+                android:layout_height="62px"
+                android:layout_marginLeft="374px">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/top_bg1">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="102px"
+                    android:layout_height="32px"
+                    android:src="@drawable/top_text1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4px">
+
+                </ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="338px"
+                android:layout_height="62px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="374px">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/top_bg1">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="102px"
+                    android:layout_height="32px"
+                    android:src="@drawable/top_text2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4px">
+
+                </ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/top_bg2"
+                    binding:onClickCommand="@{viewModel.click}">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="42px"
+                    android:textColor="@color/white"
+                    android:text="寝室两项竞赛"
+                    android:layout_centerInParent="true">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="48px"
+                    android:layout_height="42px"
+                    android:src="@drawable/monitor"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_name"
+                    android:layout_marginRight="24px">
+
+                </ImageView>
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/iv_floor"
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:src="@drawable/floor"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="335px"
+                android:layout_centerVertical="true">
+
+            </ImageView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="128px"
+                android:layout_height="40px"
+                android:background="@drawable/top_bg3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="53px">
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="24px"
+                    android:textStyle="bold"
+                    android:gravity="center">
+
+                </TextView>
+                <RelativeLayout
+                    android:layout_width="32px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/top_bg4">
+                    <ImageView
+                        android:layout_width="20px"
+                        android:layout_height="10px"
+                        android:src="@drawable/down"
+                        android:layout_centerInParent="true">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="128px"
+                android:layout_height="40px"
+                android:background="@drawable/top_bg3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="193px">
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="24px"
+                    android:textStyle="bold"
+                    android:gravity="center">
+
+                </TextView>
+                <RelativeLayout
+                    android:layout_width="32px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/top_bg4">
+                    <ImageView
+                        android:layout_width="20px"
+                        android:layout_height="10px"
+                        android:src="@drawable/down"
+                        android:layout_centerInParent="true">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30px">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="456px"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/rl_discipline"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="14px"
+                    android:background="@color/color_403E96">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/color_333588"
+                        android:textStyle="bold"
+                        android:textSize="26px"
+                        android:textColor="@color/color_32A9E7"
+                        android:gravity="center"
+                        android:text="纪律">
+
+                    </TextView>
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pc_discipline"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="52px"
+                        android:paddingRight="40px"
+                        android:paddingLeft="40px"
+                        android:paddingTop="27px"
+                        android:paddingBottom="36px">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_top">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_bottom"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_top"
+                        android:layout_alignParentRight="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_bottom"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_hygiene"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:background="@color/color_403E96">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/color_333588"
+                        android:textStyle="bold"
+                        android:textSize="26px"
+                        android:textColor="@color/color_32A9E7"
+                        android:gravity="center"
+                        android:text="卫生">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_top">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_bottom"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_top"
+                        android:layout_alignParentRight="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_bottom"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="2"
+                    android:background="@color/color_403E96"
+                    android:layout_marginBottom="14px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/color_333588"
+                        android:textStyle="bold"
+                        android:textSize="26px"
+                        android:textColor="@color/color_32A9E7"
+                        android:gravity="center"
+                        android:text="违规记录">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_top">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_bottom"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_top"
+                        android:layout_alignParentRight="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_bottom"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:background="@color/color_403E96">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/color_333588"
+                        android:paddingLeft="35px"
+                        android:paddingRight="35px">
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="宿舍">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="项目">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="一">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="二">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="三">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="四">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="五">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="六">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="日">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="合计">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="26px"
+                            android:textColor="@color/color_32A9E7"
+                            android:gravity="center"
+                            android:text="排名">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_top">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_bottom"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_top"
+                        android:layout_alignParentRight="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_bottom"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="456px"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/rl_semester"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:background="@color/color_403E96"
+                    android:layout_marginBottom="14px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/color_333588"
+                        android:textStyle="bold"
+                        android:textSize="26px"
+                        android:textColor="@color/color_32A9E7"
+                        android:gravity="center"
+                        android:text="本学期 排行榜TOP10">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_top">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_bottom"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_top"
+                        android:layout_alignParentRight="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_bottom"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:background="@color/color_403E96"
+                    android:layout_marginBottom="14px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/color_333588"
+                        android:textStyle="bold"
+                        android:textSize="26px"
+                        android:textColor="@color/color_32A9E7"
+                        android:gravity="center"
+                        android:text="本月 排行榜TOP10">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_top">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_bottom"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_top"
+                        android:layout_alignParentRight="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_bottom"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:background="@color/color_403E96">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/color_333588"
+                        android:textStyle="bold"
+                        android:textSize="26px"
+                        android:textColor="@color/color_32A9E7"
+                        android:gravity="center"
+                        android:text="本周 排行榜TOP10">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_top">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_left_bottom"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_top"
+                        android:layout_alignParentRight="true">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="25px"
+                        android:src="@drawable/horn_right_bottom"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':moduleSystem:mvvmhabit', ':moduleSystem:base', ':modulePublic:res', ':moduleSystem:http', ':moduleCore:dormitory', ':moduleCore:monitoring'
 rootProject.name='DYTSS'
